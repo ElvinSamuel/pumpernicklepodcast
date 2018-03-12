@@ -1,0 +1,26 @@
+{
+  "name": "pumpernicklepodcast",
+  "version": "1.0.0",
+  "description": "Website from the Pumpernickle Podcast",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElvinSamuel/pumpernicklepodcast.git"
+  },
+  "keywords": [
+    "Pumpernickle",
+    "Podcast"
+  ],
+  "author": "Elvin M. Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElvinSamuel/pumpernicklepodcast/issues"
+  },
+  "homepage": "https://github.com/ElvinSamuel/pumpernicklepodcast#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
