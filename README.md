@@ -1,3 +1,3 @@
 # Pumpernickle Podcast
-## [Insert Generic Slogan Here]
+## Learn somethin' new, maybe.
 
