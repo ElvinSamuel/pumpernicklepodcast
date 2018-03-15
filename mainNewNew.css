@@ -22,6 +22,10 @@ body {
     background-color: #737373;
 }
 
+.spreaker-player {
+    border-radius: 10px;
+}
+
 /* 
   Just the 'outline' of the sideways text card.
 */
