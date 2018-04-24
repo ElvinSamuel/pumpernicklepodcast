@@ -1,0 +1,140 @@
+/*
+    Notes: 
+    1) Working on more responsive web design. Mobile optimization first, then everything else will follow.
+    2) I use some additional less common CSS Selectors in here just so that way I'm not always assigning
+       an 'id' or 'class' to everything, especially when it's not necessary.
+    3) Learn more about why colors render in to browsers so terribly while the image value (via a photo editor)
+       is WAY better. More saturated and brighter colors. Can't go back to plain browser css now.
+*/
+
+
+/* For Responsive Web Design */
+
+html,
+body {
+    background-color: #292929;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 0;
+    box-sizing: border-box;
+    
+    /*No scrolling! There are monsters down there...*/
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.row::before,
+.row::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .one {
+        width: 100%;
+    }
+    .half {
+        width: calc(100% / 2);
+    }
+    .one-third {
+        width: calc(100% / 3);
+    }
+    .one-fourth {
+        width: calc(100% / 4);
+    }
+    .two-thirds {
+        width: calc(100% / 3 * 2);
+    }
+    .column {
+        float: left;
+    }
+}
+
+
+body {
+    
+    /*
+    Can't stand the plain CSS color values -- they look dull. So I created a jpeg image
+    of the color #76323F (Ox Blood? Not my name) and loaded it as a background color.
+    */
+    background-image: url('./../img/pumpernickelBrown.jpg');
+    color: WhiteSmoke;
+    font-family: 'Lato';
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/*#about {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 10px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*}*/
+
+
+footer >  span {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/*Take care of that color*/
+footer span a {
+    color: WhiteSmoke;
+}
+
+
+.column {
+    border: 1px solid #666;
+    background: #343436;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+.logo {
+    /*Here comes the z-index abuse. If this gets big enough you might see z over 9000...*/
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    margin: auto;
+}
+
+#logo {
+    /*
+        My big, beautiful brand. Best brand in the world for 28 years, 
+        as rated by the Nation Association of Elvins (NAE).
+    */
+    width: 100%;
+    height: 100%;
+}
