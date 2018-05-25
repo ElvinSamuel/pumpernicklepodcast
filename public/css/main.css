@@ -12,7 +12,7 @@
 
 html,
 body {
-    background-color: #292929;
+    background-color: #53290B;
     width: 100%;
     min-width: 100vw;
     min-height: 100vh;
@@ -67,7 +67,6 @@ body {
 
 
 body {
-    
     /*
     Can't stand the plain CSS color values -- they look dull. So I created a jpeg image
     of the color #76323F (Ox Blood? Not my name) and loaded it as a background color.
