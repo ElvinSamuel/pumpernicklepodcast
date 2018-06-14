@@ -21,7 +21,7 @@
     "url": "https://github.com/ElvinSamuel/pumpernicklepodcast/issues"
   },
   "homepage": "https://github.com/ElvinSamuel/pumpernicklepodcast#readme",
-  "dependencies": {
-    "express": "^4.16.2"
+  "devDependencies": {
+    "nodemon": "^1.17.5"
   }
 }

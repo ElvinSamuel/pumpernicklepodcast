@@ -1,15 +1,14 @@
-var express = require('express'),
-    app     = express();
+var http = require('http')
+    fs   = require('fs');
 
-app.use(express.static(__dirname + '/public'));
+http.createServer(function(req, res){
 
+	fs.readFile('public/index.html', function(err, data) {
+		res.writeHead(200, {'Content-Type': 'text/html'});
+		res.write(data); //testFile
+		res.end();
+	});
 
-app.get('/', function(req, res){
-    res.sendFile(index);
-});
-
-
-
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log(`The Bread Is Rising On Port ${process.env.PORT}`);
+}).listen(process.env.PORT, function(){
+	console.log(`The Bread Is Rising On Port ${process.env.PORT}`);
 });
