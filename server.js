@@ -1,14 +1,18 @@
-var http = require('http')
-    fs   = require('fs');
+var express = require('express'),
+	index   = require('./routes/index.js'),
+	path    = require('path'),
+	
+	app     = express();
 
-http.createServer(function(req, res){
+// Routes =============
+app.use(express.static(path.join(__dirname + '/public')));
 
-	fs.readFile('public/index.html', function(err, data) {
-		res.writeHead(200, {'Content-Type': 'text/html'});
-		res.write(data); //testFile
-		res.end();
-	});
 
-}).listen(process.env.PORT, function(){
-	console.log(`The Bread Is Rising On Port ${process.env.PORT}`);
+// ====================
+app.use('/', index);
+// ====================
+
+
+app.listen(process.env.PORT, process.env.IP, function(){
+	console.log(`The Bread Is Rising On Port ${process.env.PORT}`); 
 });
