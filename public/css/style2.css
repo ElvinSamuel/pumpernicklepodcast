@@ -2,7 +2,7 @@
     Basic Styling
 */
 html,body{
-    background-color: #555;
+    background-color: #53290B;
 }
 
 .page {
@@ -19,21 +19,26 @@ html,body{
 }
 
 .menu {
-    background-color: #5995DA;
+    background-color: transparent;
     height: 80px;
 }
 
 .header {
-    background-color: #B2D6FF;
+    /*background-color: #B2D6FF;*/
+    background-color: transparent;
 }
 
 .content {
     background-color: #EAEDF0;
     height: 600px;
+    /*Doing some rearranging*/
+    order: 2;
 }
 
 .sign-up {
     background-color: #D5E9FE;
+    /*Doing some rearranging*/
+    order:1;
 }
 
 .feature-1 {
@@ -48,6 +53,23 @@ html,body{
     background-color: #C8C6FA;
 }
 
+
+/* For Even Smaller Devices (Or If Someone Resizes The Window) */
+@media only screen and (max-width: 400px){
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 50%;
+    }
+    
+    .header > img {
+        min-width: 100px;
+        max-width: 200px;
+    }
+}
+
+
 /* For Phones */
 @media only screen and (min-width: 401px) and (max-width: 960px){
     .sign-up,
@@ -55,6 +77,10 @@ html,body{
     .feature-2,
     .feature-3 {
         width: 50%;
+    }
+    
+    .header > img {
+        max-width: 350px;
     }
 }
 
@@ -64,6 +90,11 @@ html,body{
         width: 960px;
         margin: 0 auto;
     }
+    
+    .header > img {
+        max-width: 470px;
+    }
+
     
     .feature-1,
     .feature-2,
