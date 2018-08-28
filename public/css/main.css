@@ -120,7 +120,7 @@ footer span a {
 
 
 .logo {
-    /*Here comes the z-index abuse. If this gets big enough you might see z over 9000...*/
+    /*Here comes the z-index abuse...*/
     z-index: 1;
     position: absolute;
     top: 20%;
