@@ -1,0 +1,37 @@
+<? xml version="1.0" encoding="UTF-8">
+<rss version="2.0">
+    <!--
+        New to XML, but this section below should remain the same no matter what
+        episode the user is on. Any new podcasts should have the same image.
+    -->
+    <channel>
+        <title>The Pumpernickel Podcast</title>
+        <link>https://www.PumpernickPodcast.com</link>
+        <description>
+            Random commentary by a room full of idiots. 0.01% Facts By Volume.
+        </description>
+        <language>en-us</language>
+        <image>
+            <title>The Chosen Bread</title>
+            <link>http://www.PumpernickPodcast.com</link>
+            <width>150</width>
+            <height>150</height>
+        </image>
+        
+        <!--
+            This is the part where we (any of us really) continually add to the list.
+            New episodes will go here.
+        -->
+        <item>
+            <title></title>
+            <pubDate></pubDate>
+            <link></link>
+            <description>
+                <![CDATA[check us out <a href="www.PumpernickPodcast.com">here</a> to see the website.]]>
+            </description>
+            
+            <!--For iTunes-->
+            <category>comedy</category>
+        </item>
+    </channel>
+</rss>

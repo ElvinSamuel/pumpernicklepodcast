@@ -2,12 +2,13 @@
     Basic Styling
 */
 html,body{
-    background-color: #53290B;
+    background-color: #643A1C;
 }
 
 .page {
     display: flex;
     flex-wrap: wrap;
+    background-color: #643A1C;
 }
 
 .section {
@@ -29,14 +30,14 @@ html,body{
 }
 
 .content {
-    background-color: #EAEDF0;
-    height: 600px;
+    background-color: #643A1C;
+    height: 100px;
     /*Doing some rearranging*/
     order: 2;
 }
 
 .sign-up {
-    background-color: #D5E9FE;
+    background-color: transparent;
     /*Doing some rearranging*/
     order:1;
 }
@@ -56,15 +57,19 @@ html,body{
 
 /* For Even Smaller Devices (Or If Someone Resizes The Window) */
 @media only screen and (max-width: 400px){
-    .sign-up,
     .feature-1,
     .feature-2,
     .feature-3 {
-        width: 50%;
+        width: 100%;
+    }
+    
+    .sign-up > iframe {
+        min-width: 150px;
+        min-height: 200px;
     }
     
     .header > img {
-        min-width: 100px;
+        min-width: 80px;
         max-width: 200px;
     }
 }
@@ -72,15 +77,19 @@ html,body{
 
 /* For Phones */
 @media only screen and (min-width: 401px) and (max-width: 960px){
-    .sign-up,
     .feature-1,
     .feature-2,
     .feature-3 {
-        width: 50%;
+        width: 100%;
+    }
+    
+    .sign-up > iframe {
+        min-width: 400px;
+        min-height: 300px;
     }
     
     .header > img {
-        max-width: 350px;
+        max-width: 280px;
     }
 }
 
@@ -91,8 +100,13 @@ html,body{
         margin: 0 auto;
     }
     
+    .sign-up > iframe {
+        min-width: 600px;
+        min-height: 300px;
+    }
+    
     .header > img {
-        max-width: 470px;
+        max-width: 450px;
     }
 
     
